@@ -2,19 +2,22 @@
 #include<stdio.h>
 int main ()
 {
- int i,j,sum,a[5];
- for(i=0;i<5;i++)
+ int n,i,j,sum,a[100];
+ printf("How many number you want to input: ");
+ scanf("%d",&n);
+
+ for(i=0;i<n;i++)
  {
      scanf("%d",&a[i]);
 
  }
- for(j=0;j<5;j++)
+ for(j=0;j<n;j++)
      {
          sum=sum+a[j];
 
      }
       printf("Sum = %d\n",sum);
-      printf("Avg = %2.f\n", (float)sum/5);
+      printf("Avg = %.2f\n", (float)sum/n);
 
 
    return 0;
